@@ -36,3 +36,9 @@ func right():
 func pouding():
 	animation.play("poudingAnim")
 	
+func dead():
+	animation.stop()
+	stop.hide()
+	pouding.hide()
+	rip.show()
+	

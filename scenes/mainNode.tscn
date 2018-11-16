@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=1]
+[gd_scene load_steps=8 format=1]
 
 [ext_resource path="res://scripts/mainNode.gd" type="Script" id=1]
 [ext_resource path="res://assets/img_fundoChao.png" type="Texture" id=2]
@@ -6,9 +6,6 @@
 [ext_resource path="res://assets/felpudoIdle.png" type="Texture" id=4]
 [ext_resource path="res://assets/felpudoBate.png" type="Texture" id=5]
 [ext_resource path="res://assets/grave.png" type="Texture" id=6]
-[ext_resource path="res://scenes/barrel.tscn" type="PackedScene" id=7]
-[ext_resource path="res://scenes/barrelEnemyLeft.tscn" type="PackedScene" id=8]
-[ext_resource path="res://scenes/barrelEnemyRight.tscn" type="PackedScene" id=9]
 
 [sub_resource type="Animation" id=1]
 
@@ -50,6 +47,7 @@ centered = false
 
 [node name="timberman" type="Node2D" parent="."]
 
+editor/display_folded = true
 transform/pos = Vector2( 220, 1070 )
 z/z = 1
 script/script = ExtResource( 3 )
@@ -104,16 +102,8 @@ drag_margin/top = 0.2
 drag_margin/right = 0.2
 drag_margin/bottom = 0.2
 
-[node name="barrel" parent="." instance=ExtResource( 7 )]
+[node name="barrels" type="Node2D" parent="."]
 
-transform/pos = Vector2( 349.84, 1099.68 )
-
-[node name="barrelEnemyLeft" parent="." instance=ExtResource( 8 )]
-
-transform/pos = Vector2( 348.993, 761.058 )
-
-[node name="barrelEnemyRight" parent="." instance=ExtResource( 9 )]
-
-transform/pos = Vector2( 348.993, 925.042 )
+[node name="destBarrels" type="Node2D" parent="."]
 
 
