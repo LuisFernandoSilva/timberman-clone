@@ -25,7 +25,7 @@ tracks/1/keys = {
 "transitions": FloatArray( 1 ),
 "values": [ {
 "args": [  ],
-"method": "queue_free()"
+"method": "queue_free"
 } ]
 }
 

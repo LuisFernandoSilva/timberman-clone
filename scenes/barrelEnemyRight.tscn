@@ -14,13 +14,13 @@ script/script = ExtResource( 1 )
 transform/scale = Vector2( 0.7, 0.7 )
 texture = ExtResource( 2 )
 
-[node name="enemyAnimationRight" type="AnimationPlayer" parent="."]
+[node name="animationMoveSide" type="AnimationPlayer" parent="."]
 
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-anims/barrelLeft = ExtResource( 3 )
-anims/barrelRight = ExtResource( 4 )
+anims/left = ExtResource( 3 )
+anims/right = ExtResource( 4 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]

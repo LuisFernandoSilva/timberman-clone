@@ -9,7 +9,8 @@ func _ready():
 func destroy(direction):
 	
 	if direction == -1:
-		get_node("animationMoveSide").play("right")
-	else:
 		get_node("animationMoveSide").play("left")
+		
+	if direction == 1:
+		get_node("animationMoveSide").play("right")
 	
